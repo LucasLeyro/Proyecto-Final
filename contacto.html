@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>El Mago - Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div id="header"><p><a href="index.html">El Mago</a></p>
+		<ul>
+			<li><a href="index.html#novedades">Novedades</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="locales.html">Locales</a></li>
+			<li><a href="nosotros.html">Sobre Nosotros</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</div>
+	<div class="contenido">
+		<div class="titulo"><p>Contacto</p></div>
+		<div>
+			<p class="nota">No dudes en ponerte en contacto con nosotros si tenés dudas o sugerencias.</p>
+		</div>
+		<div class="form">
+			<form action="contacto.html" method="GET" enctype="multipart/form-data">
+			<div>
+				<p>Sucursal</p>
+				<select name="local">
+					<option value="micro">Microcentro</option>
+					<option value="ituz">Ituzaingo</option>
+					<option value="gral">General Garrido</option>
+					<option value="otro">Después agrego más opciones</option>
+				</select>
+			</div>
+			<div>
+				<p>¡Escribinos un mensaje!</p>
+				<textarea name="Comment"></textarea>
+			</div>
+			<input type="submit" name="Enter">
+			</form>
+		</div>
+	<div id="footer">© Copyright 2022 El Mago S.A. </div>	
+</body>
+</html>
