@@ -8,30 +8,17 @@ body{
 	font-family: 'Krona One', sans-serif;
 }
 #header{
-	color: #black;
-	background-color: #black;
-	height: 70px;
 	width: 100%;
-	position: fixed;
 	z-index: 20;
 }
-#header p{
+#header span{
 	display: inline-block;
-	font-size: 4rem;
-	text-align: left;
+	font-size: 1.3rem;
 }
 #header li{
 	display: inline-block;
-	font-size: 20px;
+	font-size: 0.9rem;
 	margin-right: 1%;
-}
-#containerIndex{
-	  display: grid;
-  	grid-template-areas: 'header header header'
- 	'hero hero hero'
- 	'cont cont cont';
-	min-height: 100vh;
-	grid-template-rows: 70px auto auto 20px;
 }
 .titulo{
 	font-size: 40px;
@@ -40,6 +27,7 @@ body{
 }
 .nota{
 	padding: 0% 8% 0% 8%;
+	font-size: 1rem;
 }
 .producto{
 	display: inline-block;
@@ -66,7 +54,6 @@ body{
 
 .hero{
 	grid-area: hero;
-	padding:  3%;
 }
 .hero img{
   width: 100%;
@@ -92,10 +79,7 @@ a{
 	text-decoration: none;
 	color: #000;
 }
-.content{
-	grid-area: cont;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 
+.feat{
+	width: 40%;
 }

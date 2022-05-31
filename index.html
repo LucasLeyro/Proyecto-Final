@@ -8,16 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="index.html#news">
 	    	<img src="assets/mago-icn.png" alt="El Mago" width="26" height="30" class="d-inline-block align-text-top">
-	    	El Mago
+	    	<span>El Mago</span>
 	    </a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarText">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
 	          <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
@@ -35,31 +35,36 @@
 	    </div>
 	  </div>
 	</nav>
-	<div id="containerIndex">
+	<div class="container">
 		<div class="hero">
 			<div class="overZoom"><img src="assets/messi_banner.jpg" alt="Messi Burger"></div>
 			<p class="titulo">Nueva Messi* Burger</p>
 			<p>*(puede no contener partes del cuerpo de Lionel Messi)</p>
 		</div>
-		<div class="content">
-			<div class="card" style="width: 30%;">
-			  <img src="assets/oreo.jpg" class="card-img-top" alt="Oreo">
-			  <div class="card-body">
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			  </div>
+		<div class="content row g-3">
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+				  <img src="assets/oreo.jpg" class="card-img-top" alt="Oreo">
+				  <div class="card-body">
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  </div>
+				</div>
 			</div>
-			<div class="card" style="width: 30%;">
-			  <img src="assets/infarto.webp" class="card-img-top" alt="Infarto">
-			  <div class="card-body">
-			    <p class="card-text">No consideramos el tamaño de la mandíbula humana o consumo diario recomendado de colesterol al prepararla.</p>
-			  </div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+				  <img src="assets/infarto.webp" class="card-img-top" alt="Infarto">
+				  <div class="card-body">
+				    <p class="card-text">No consideramos el tamaño de la mandíbula humana o consumo diario recomendado de colesterol al prepararla.</p>
+				  </div>
+				</div>
 			</div>
-
-			<div class="card item" style="width: 30%;">
-			  <img src="assets/lango.jpg" class="card-img-top" alt="Lango">
-			  <div class="card-body">
-			    <p class="card-text">¿Cuenta como "hamburguesa" si está hecha de Langostinos? ¡No nos importa! ¡Probala!</p>
-			  </div>
+			<div class="col-12 col-md-6 col-lg-4">
+				<div class="card">
+				  <img src="assets/lango.jpg" class="card-img-top" alt="Lango">
+				  <div class="card-body">
+				    <p class="card-text">¿Cuenta como "hamburguesa" si está hecha de Langostinos? ¡No nos importa! ¡Probala!</p>
+				  </div>
+				</div>
 			</div>
 		</div>
 	</div>
