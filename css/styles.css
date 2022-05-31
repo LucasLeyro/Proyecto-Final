@@ -2,13 +2,14 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	font-family: 'Krona One', sans-serif;
 }
 #header{
-	color: #000;
-	background-color: #ffb800;
+	color: #black;
+	background-color: #black;
 	height: 70px;
 	width: 100%;
 	position: fixed;
@@ -16,7 +17,7 @@ body{
 }
 #header p{
 	display: inline-block;
-	font-size: 30px;
+	font-size: 4rem;
 	text-align: left;
 }
 #header li{
@@ -24,9 +25,13 @@ body{
 	font-size: 20px;
 	margin-right: 1%;
 }
-.contenido{
-	position: relative;
-	top: 70px;
+#containerIndex{
+	  display: grid;
+  	grid-template-areas: 'header header header'
+ 	'hero hero hero'
+ 	'cont cont cont';
+	min-height: 100vh;
+	grid-template-rows: 70px auto auto 20px;
 }
 .titulo{
 	font-size: 40px;
@@ -58,11 +63,39 @@ body{
 	color: white;
 	text-align: center;
 }
-#novedades img{
-	margin: 0% 10% 0% 10%;
-	width: 80%;
+
+.hero{
+	grid-area: hero;
+	padding:  3%;
 }
+.hero img{
+  width: 100%;
+  animation-name: zoom;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.overZoom {
+  overflow: hidden;
+}
+
 a{
 	text-decoration: none;
 	color: #000;
+}
+.content{
+	grid-area: cont;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
 }

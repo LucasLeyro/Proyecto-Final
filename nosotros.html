@@ -4,24 +4,65 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>El Mago - Nuestra Historia</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<div id="header"><p><a href="index.html">El Mago</a></p>
-		<ul>
-			<li><a href="index.html#novedades">Novedades</a></li>
-			<li><a href="productos.html">Productos</a></li>
-			<li><a href="locales.html">Locales</a></li>
-			<li><a href="nosotros.html">Sobre Nosotros</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
-		</ul>
-	</div>
+	<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html#news">
+	    	<img src="assets/mago-icn.png" alt="El Mago" width="26" height="30" class="d-inline-block align-text-top">
+	    	El Mago
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarText">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+	        </li>
+			<li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="locales.html">Locales</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="nosotros.html">Nosotros</a>
+	        </li>
+			<li class="nav-item">
+				<a class="nav-link" href="contacto.html">Contacto</a>
+			</li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
 	<div class="contenido">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="assets/nosotros.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="..." class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="..." class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
 		<div class="titulo"><p>Nuestra Historia</p></div>
 		<div class="nota"><p>The fact that so many books still name the Beatles as "the greatest or most significant or most influential" rock band ever only tells you how far rock music still is from becoming a serious art. Jazz critics have long recognized that the greatest jazz musicians of all times are Duke Ellington and John Coltrane, who were not the most famous or richest or best sellers of their times, let alone of all times. Classical critics rank the highly controversial Beethoven over classical musicians who were highly popular in courts around Europe. Rock critics, instead, are still blinded by commercial success. The Beatles sold more than anyone else (not true, by the way), therefore they must have been the greatest. Jazz critics grow up listening to a lot of jazz music of the past, classical critics grow up listening to a lot of classical music of the past. Rock critics are often totally ignorant of the rock music of the past, they barely know the best sellers.</p>
 		<img src="assets/nosotros.jpg" alt="Empresa Seria">
 		<p>In a sense, the Beatles are emblematic of the status of rock criticism as a whole: too much attention paid to commercial phenomena and too little to the merits of real musicians. If somebody composes the most divine music but no major label picks him up and sells him around the world, most rock critics will ignore him. If a major label picks up a musician who is as stereotyped as can be but launches her or him worldwide, your average critic will waste rivers of ink on her or him. This is the sad status of rock criticism: rock critics are basically publicists working for major labels, distributors and record stores. They simply highlight what product the music business wants to make money from.</p></div>
 	</div>
 	<div id="footer">© Copyright 2022 El Mago S.A. </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
