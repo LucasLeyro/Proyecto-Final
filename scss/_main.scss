@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Krona One', sans-serif;
+}
+#header{
+	width: 100%;
+	z-index: 20;
+	display: inline-block;
+	span{
+	font-size: 1.3rem;}
+	li{
+	font-size: 0.9rem;
+	margin-right: 1%;}
+}
+.titulo{
+	font-size: 40px;
+	display: inline-block;
+	margin: 5px;
+}
+.nota{
+	padding: 0% 8% 0% 8%;
+	font-size: 1rem;
+}
+.producto{
+	display: inline-block;
+	border: 1px solid black;
+	width: 26%;
+	padding: 3%;
+}
+.form{
+	margin: 15px;
+	padding: 0% 12% 0% 12%;
+}
+
+@mixin footer($bg, $color){
+	height: 2rem;
+	font-size: 10px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $bg;
+	color: $color;
+	text-align: center;
+}
+
+#footer {
+	@include footer(grey, white)
+}
+.zoom5s{
+  animation-name: zoom;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+.hero{
+	grid-area: hero;
+	padding-top: 4%;
+	img{
+	@extend .zoom5s;
+  width: 100%;
+	}
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.carousel{
+	padding-top: 1rem;
+}
+.overZoom {
+  overflow: hidden;
+  border-radius: 15px;
+}
+a{
+	text-decoration: none;
+	color: map-get($color, negro);
+}
+.feat{
+	width: 40%;
+}
