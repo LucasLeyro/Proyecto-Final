@@ -1,0 +1,10 @@
+﻿Sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:
+* index.html: “Sitio Oficial de Hamburguesería ‘El Mago’. ¡Conocé nuestros productos y dónde conseguirlos!"
+* productos.html: “'El Mago' Hamburguesas y otras opciones."
+* locales.html: "Hamburguesería 'El Mago' ¡Encontrá el local más cercano o pedí desde tu casa!"
+* nosotros.html: "Hamburguesería 'El Mago' ¡Conocé nuestra historia!"
+* contacto.html: "Hamburguesería 'El Mago' - ¡Envianos tus sugerencias!"
+
+
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "HAMBURGUESAS, BURGER, MAGO, EMPANADAS, HAMBURGUESERÍA, PALERMO, SAN TELMO, EMPANADAS, MILANESAS"
