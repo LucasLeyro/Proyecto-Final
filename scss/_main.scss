@@ -38,33 +38,27 @@ body{
 	padding: 0% 12% 0% 12%;
 }
 
-@mixin footer($bg, $color){
+#footer {
 	height: 2rem;
 	font-size: 10px;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: $bg;
-	color: $color;
+	background-color: grey;
+	color: white;
 	text-align: center;
 }
 
-#footer {
-	@include footer(grey, white)
-}
-.zoom5s{
-  animation-name: zoom;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-}
 .hero{
 	grid-area: hero;
 	padding-top: 4%;
 	img{
-	@extend .zoom5s;
+	animation-name: zoom;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
   width: 100%;
 	}
 }
@@ -85,7 +79,7 @@ body{
 }
 a{
 	text-decoration: none;
-	color: map-get($color, negro);
+	color: #000;
 }
 .feat{
 	width: 40%;

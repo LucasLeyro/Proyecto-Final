@@ -39,19 +39,45 @@
 	</nav>
 	<div class="contenido">
 		<div class="titulo">Productos</div>
-		<div class="categoria"><span>Hamburguesas</span></div>
-			<div><span class="producto">Hamburguesa Verde</span>
-			<span class="producto">Messi Burger</span>
-			<span class="producto">Oreoguesa</span>
-			<span class="producto">Langostino</span></div>
-		<div class="categoria"><span>Milanesas</span></div>
-		<div class="categoria"><span>Empanadas</span></div>
-			<div><span class="producto">Empanada Cortada a Cuchillo</span>
-			<span class="producto">Empanada de Milanesa</span>
-			<span class="producto">Empanada de Hamburguesa</span>
-			<span class="producto">Empanada Invisible</span></div>
-		<div class="categoria"><span>Indumentaria</span></div>
-			<div><span class="producto">Medias</span></div>
+		<p class="m-3">
+		  <a class="btn btn-primary" data-bs-toggle="collapse" href="#hamburguesas" role="button" aria-expanded="false" aria-controls="hamburguesas">Hamburguesas</a>
+		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#milanesas" aria-expanded="false" aria-controls="milanesas">Milanesas</button>
+		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#empanadas" aria-expanded="false" aria-controls="empanadas">Empanadas</button>
+		  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ropa" aria-expanded="false" aria-controls="ropa">Indumentaria</button>
+		</p>
+		<div class="row">
+		  <div class="col">
+		    <div class="collapse multi-collapse" id="hamburguesas">
+		      <div class="card card-body">
+		        Messi Burger, Hamburguesa Verde, Oreoguesa, Langostino
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="collapse multi-collapse" id="milanesas">
+		      <div class="card card-body">
+		        Napolitana
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="collapse multi-collapse" id="empanadas">
+		      <div class="card card-body">
+		        Empanada cortada a cuchillo
+		        Empanada de Milanesa
+		        Empanada de Hamburguesa
+		        Empanada Invisible
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="collapse multi-collapse" id="ropa">
+		      <div class="card card-body">
+		        Medias
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</div>
 	<div id="footer">© Copyright 2022 El Mago S.A. </div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
